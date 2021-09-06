@@ -1,0 +1,6 @@
+#E55812 persimmon
+#002626 rich black
+#0E4749 warm black
+
+<span>First name</span>
+                <span><input type="text"></span>

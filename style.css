@@ -1,0 +1,181 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+section{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    min-height:100vh;
+    background:#002626;
+
+}
+section::before{
+    content:"";
+    position:absolute;
+    left:0;
+    top:0;
+    width:50%;
+    height:100%;
+    background:#E55812
+}
+.container{
+    min-width:1110px;
+    min-height: 550px;
+    position:relative;
+    display:flex;
+    z-index:1000;
+    
+}
+.container .info{
+    position:absolute;
+    top:40px;
+    width:350px;
+    height:calc(100% - 80px);
+    background:#002626;
+    z-index:1;
+    padding:40px;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content:space-between;
+    box-shadow: 0px 20px 25px rgba(0,0,0,0.15);
+
+}
+.container .info h2{
+    color:#fff;
+    font-size: 34px;
+    font-weight:500 ;
+}
+
+.container .info ul.infot{
+    position:relative;
+    margin:20px 0px; 
+}
+.container .info ul.infot li{
+    position:relative;
+    list-style:none;
+    display:flex;
+    margin:20px;
+    cursor:pointer;
+    align-items: flex-start;
+
+}
+.container .info ul.infot li span:nth-child(1){
+    width:30px;
+    min-width:30px;
+}
+.container .info ul.infot li span:nth-child(1) img{
+    max-width:100%;
+    filter:invert(1);
+}
+.container .info ul.infot li span:nth-child(2){
+    margin-left: 10px;
+    font-weight: 300;
+    color:#fff
+}
+.container .info ul.soc-med{
+    position: relative;
+    display: flex;
+}
+.container .info ul.soc-med li{
+    list-style: none;
+    margin-right: 15px;
+
+}
+.container .info ul.soc-med li a{
+    text-decoration: none;
+}
+.container .info ul.soc-med li img{
+    width:20px;
+    margin:10px;
+    filter: invert(1);
+}
+.container .form{
+    position:absolute;
+    padding:70px 50px;
+    padding-left: 250px;
+    margin-left:150px;
+    width:calc(100% - 150px);
+    height:100%;
+    background:#fff;
+    box-shadow: 0px 50px 50px rgba(0,0,0,0.25);
+}
+.container .form h2{
+    color:#002626;
+    font-size: 24px;
+    font-weight:500;
+}
+.container .form .formB{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    flex-wrap: wrap;
+}
+.container .form .formB .ibox{
+    position: relative; 
+    margin-bottom: 35px;
+
+}
+.container .form .formB .ibox.w50{
+    width:47%;
+}
+.container .form .formB .ibox.w100{
+    width: 100%;
+}
+.container .form .formB .ibox input,
+.container .form .formB .ibox textarea
+{
+    width: 100%;
+    resize:none;
+    font-size: 18px;
+    font-weight: 500;
+    color:#002626;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #002626;
+
+}
+.container .form .formB .ibox textarea{
+    height:120px;
+}
+.container .form .formB .ibox span{
+    position: absolute;
+    left:0;
+    padding50 7px;
+    pointer-events: none;
+    font-size: 18px;
+    font-weight: 300;
+    transition: 0.3s;
+
+}
+.container .form .formB .ibox input:focus~span,
+.container .form .formB .ibox input:valid~span,
+.container .form .formB .ibox textarea:focus ~span,
+.container .form .formB .ibox textarea:valid~span{
+    transform: translateY(-20px);
+    font-size: 12px;
+    font-weight:400;
+    letter-spacing: 1px;
+    color:#002626;
+    font-weight: 500;;
+}
+
+.container .form .formB .ibox input[type="submit"]{
+    position: relative;
+    cursor:pointer;
+    background:#002626;
+    color:#fff;
+    border:none;
+    max-width:150px;
+    padding:12px;
+
+
+}
+.container .form .formB .ibox input[type="submit"]:hover{
+    background:#0E4749 
+}
